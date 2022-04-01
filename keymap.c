@@ -30,7 +30,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_CAPS,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                         KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, KC_QUOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,  KC_ESC,
+      KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,  KC_RCTL,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LGUI,   MO(1),  KC_SPC,     KC_ENT,   MO(2), RALT_T(KC_SPC)
                                       //`--------------------------'  `--------------------------'
@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
         RESET, LGUI(KC_1), LGUI(KC_2), LGUI(KC_3), LGUI(4), LGUI(5),                      LGUI(6), LGUI(7), LGUI(8), LGUI(9), LGUI(0), XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-     XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX,LSA(KC_N), HYPR(KC_ENT),                 KC_BRID, KC_KB_VOLUME_DOWN, KC_KB_VOLUME_UP, KC_BRIU, XXXXXXX, XXXXXXX,
+        XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX,LSA(KC_N), HYPR(KC_ENT),                 KC_BRID, KC_KB_VOLUME_DOWN, KC_KB_VOLUME_UP, KC_BRIU, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
