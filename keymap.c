@@ -67,7 +67,7 @@ RESET, LGUI(KC_1), LGUI(KC_2), LGUI(KC_3), LGUI(KC_4), LGUI(KC_5),             L
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
 XXXXXXX,  XXXXXXX, XXXXXXX, LGUI(KC_SPC),LSA(KC_N), HYPR(KC_ENT),              KC_BRID, KC_KB_VOLUME_DOWN, KC_KB_VOLUME_UP, KC_BRIU, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, LGUI(KC_SPC), XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LGUI, _______,  KC_SPC,     KC_ENT, _______, KC_LALT
                                       //`--------------------------'  `--------------------------'
