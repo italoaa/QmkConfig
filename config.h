@@ -20,7 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-//#define USE_MATRIX_I2C
+// #define USE_MATRIX_I2C
 
 /* Select hand configuration */
 
@@ -28,14 +28,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define MASTER_RIGHT
 // #define EE_HANDS
 
-//#define TAPPING_FORCE_HOLD
-//#define TAPPING_TERM 100
+// #define TAPPING_FORCE_HOLD
+// #define TAPPING_TERM 100
 
 #define OLED_FONT_H "keyboards/crkbd/keymaps/mine/glcdfont.c"
 
 #pragma once
 
-//#define USE_MATRIX_I2C
+// #define USE_MATRIX_I2C
 
 /* Select hand configuration */
 
@@ -48,10 +48,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #undef SSD1306OLED
 
 #define USE_SERIAL_PD2
+#define OLED_TIMEOUT 120000
 
 // #define TAPPING_FORCE_HOLD
 #define TAPPING_TERM 200
-//#define RETRO_TAPPING
+// #define RETRO_TAPPING
 #define IGNORE_MOD_TAP_INTERRUPT
 
 // #define OLED_FONT_WIDTH 5
