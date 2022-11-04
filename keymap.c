@@ -216,17 +216,17 @@ static void render_luna(int LUNA_X, int LUNA_Y) {
     }
 
     /* animation timer */
-    if (timer_elapsed32(anim_timer) > ANIM_FRAME_DURATION) {
-        anim_timer = timer_read32();
-        animate_luna();
-    }
 
     /* this fixes the screen on and off bug */
-    if (current_wpm > 0) {
+    if (timer_elapsed32(anim_sleep) > OLED_TIMEOUT) {
+        oled_off();
+    } else if (current_wpm > 0) {
         oled_on();
         anim_sleep = timer_read32();
-    } else if (timer_elapsed32(anim_sleep) > OLED_TIMEOUT) {
-        oled_off();
+        if (timer_elapsed32(anim_timer) > ANIM_FRAME_DURATION) {
+            anim_timer = timer_read32();
+            animate_luna();
+        }
     }
 }
 
@@ -325,7 +325,7 @@ bool oled_task_user(void) {
 
 #endif
 
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+bool process_record_user(uint16_t keycode, keyrecord_t* record) {
     switch (keycode) {
         case _QWERTY:
             if (record->event.pressed) {
